@@ -1,0 +1,18 @@
+
+main {
+	text-align: center;
+	margin-top: 6rem;
+}
+
+.question {
+	margin-top: 10rem;
+}
+
+.float-list {
+	list-style: none;
+}
+
+.float-list .list-item {
+	display: inline;
+	margin-right: 2%;
+}
