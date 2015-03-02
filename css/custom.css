@@ -6,13 +6,54 @@ main {
 
 .question {
 	margin-top: 10rem;
+	display: inline-block;
+}
+header {
+	margin-top: 2rem;
 }
 
-.float-list {
-	list-style: none;
+header nav {
+	text-align: center;
 }
 
-.float-list .list-item {
+.brand {
+	-moz-transition: color .2s;
+	-webkit-transition: color .2s;
+	transition: color .2s;
+	color: #073642;
+	text-decoration: none;
+}
+
+.brand:hover .logo {
+	background: #0FA0CE;
+}
+
+.tag {
+	position: relative;
+	top: 10px;
+}
+
+.brand h5 {
+	position: relative;
+	top: 4px;
 	display: inline;
-	margin-right: 2%;
+}
+
+.brand .logo {
+	-moz-transition: color .2s;
+	-webkit-transition: color .2s;
+	transition: background .2s;
+	width: 30px;
+	height: 30px;
+	background: #073642;
+	border-radius: 50%;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 8px;
+}
+
+.gift-for {
+	position: relative;
+	left: 10px;
+	top: -5px;
 }
