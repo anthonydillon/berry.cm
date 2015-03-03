@@ -57,3 +57,54 @@ header nav {
 	left: 10px;
 	top: -5px;
 }
+
+.products {
+	list-style: none;
+	margin: 0;
+}
+
+.product-item__button {
+	display: block;
+	white-space: inherit;
+	line-height: 1.5;
+	padding: 30px;
+	height: auto;
+	min-height: 315px;
+}
+
+.product-item__image {
+	width: 100%;
+	height: 150px;
+}
+
+.product-item__price {
+	margin: 20px 0 0;
+	font-size: 1.2em;
+}
+
+.first-col {
+	margin-left: 0;
+}
+
+.site-footer {
+	margin-top: 4em;
+	text-align: center;
+}
+
+.social-list {
+	list-style: none;
+	margin-left: 0;
+}
+
+.social-list__item {
+	display: inline;
+	margin-right: 20px;
+}
+
+.social-list__item:last-of-type {
+	margin-right: 0;
+}
+
+.copyright {
+	color: #888;
+}
