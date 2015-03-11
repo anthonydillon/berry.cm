@@ -5,7 +5,7 @@
  * Displays all of the head element and everything up until the "site-content" div.
  *
  * @package WordPress
- * @subpackage Sherpa
+ * @subpackage Berry
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>

@@ -1,7 +1,7 @@
 <?php
 /**
  * @package WordPress
- * @subpackage Sherpa
+ * @subpackage Berry
  */
 
 get_header(); ?>

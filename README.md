@@ -1,3 +1,3 @@
-# Sherpa
+# Berry theme
 
-This is the theme for the Sherpa project.
+This is the theme for the Berry project.

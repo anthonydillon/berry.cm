@@ -5,7 +5,7 @@
  * Contains the closing of the "site-content" div and all content after.
  *
  * @package WordPress
- * @subpackage Sherpa
+ * @subpackage Berry
  */
 ?>
 
@@ -30,6 +30,9 @@
 </div><!-- .site -->
 
 <?php wp_footer(); ?>
+
+<script src="//use.typekit.net/bzi0amg.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
 
 </body>
 </html>
