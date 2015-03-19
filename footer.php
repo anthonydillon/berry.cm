@@ -22,7 +22,7 @@
 					<li class="social-list__item"><a href=""><img src="<?php bloginfo('template_directory'); ?>/images/icons/icon-instagram.png" alt="Instagram" width="32" height="32" /></a></li>
 					<li class="social-list__item"><a href=""><img src="<?php bloginfo('template_directory'); ?>/images/icons/icon-pinterest.png" alt="Pinterest" width="32" height="32" /></a></li>
 				</ul>
-				<p class="copyright">Sherpa is an independent company. Amazon is a trademarked brand. ©2015 Sherpa.io. All rights reserved.</p>
+				<p class="copyright">Berry is an independent company. Amazon is a trademarked brand. ©2015 berry.cm. All rights reserved.</p>
 			</div><!-- .site-info -->
 		</div>
 	</footer><!-- .site-footer -->
