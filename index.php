@@ -17,10 +17,16 @@ get_header(); ?>
 					foreach ( $rand_posts as $post ) :
 						setup_postdata( $post ); ?>
 						<li class="product-item four columns <?php if ($i % 3 == 0) { echo 'first-col'; } ?>">
+							<?php
+								$product_url = get_post_meta( $post->ID, '_product_url', true );
+								$product_price = get_post_meta( $post->ID, '_product_price', true );
+							?>
 							<a href="<?php the_permalink(); ?>" class="product-item__button button">
 								<p class="product-item__name"><?php the_title(); ?></p>
 								<img src="http://dummyimage.com/300x100/ccc/fff.png&amp;text=+" alt="" class="product-item__image" />
-								<p class="product-item__price">&pound;32.99</p>
+								<?php if($product_price) { ?>
+									<p class="product-item__price">&pound;<?php echo $product_price ?></p>
+								<?php } ?>
 							</a>
 						</li>
 						<?php
