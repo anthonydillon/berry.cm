@@ -74,9 +74,10 @@ header nav {
 	min-height: 315px;
 }
 
-.product-item__image {
-	width: 100%;
-	height: 150px;
+.product-item img {
+	max-height: 150px;
+	width: auto;
+	max-width: 100%;
 }
 
 .product-item__price {

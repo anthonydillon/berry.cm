@@ -20,10 +20,17 @@ get_header(); ?>
 							<?php
 								$product_url = get_post_meta( $post->ID, '_product_url', true );
 								$product_price = get_post_meta( $post->ID, '_product_price', true );
+								$product_image = get_the_content();
 							?>
-							<a href="<?php the_permalink(); ?>" class="product-item__button button">
+							<a href="<?php echo $product_url ?>" class="product-item__button button">
 								<p class="product-item__name"><?php the_title(); ?></p>
-								<img src="http://dummyimage.com/300x100/ccc/fff.png&amp;text=+" alt="" class="product-item__image" />
+								<?php
+								if ($product_image) {
+									echo $product_image;
+								} else {
+									echo '<img src="http://dummyimage.com/300x300/ccc/fff.png&amp;text=+" alt="" />';
+								}
+								?>
 								<?php if($product_price) { ?>
 									<p class="product-item__price">&pound;<?php echo $product_price ?></p>
 								<?php } ?>

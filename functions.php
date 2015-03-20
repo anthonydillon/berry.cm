@@ -41,4 +41,29 @@ function product_details() {
 	echo '<input type="text" name"_product_price" value="' . $product_price . '" />';
 }
 
+function save_meta( $post_id, $post ) {
+
+  if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE )
+    return;
+
+  if ( !current_user_can( 'edit_post', $post->ID ) )
+    return;
+
+  $meta_data['_product_url'] = $_POST['_product_url'];
+  $meta_data['_product_price'] = $_POST['_product_price'];
+
+  foreach ( $meta_data as $key => $value ) {
+    if ( $post->post_type == 'revision' ) return;
+    $value = implode( ',', (array)$value );
+    if ( get_post_meta( $post->ID, $key, FALSE ) ) {
+      update_post_meta( $post->ID, $key, $value );
+    } else {
+      add_post_meta( $post->ID, $key, $value );
+    }
+    if ( !$value ) delete_post_meta( $post->ID, $key );
+  }
+}
+
+add_action( 'save_post', 'save_meta', 1, 2 );
+
 ?>
