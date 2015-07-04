@@ -30,9 +30,8 @@
 </div><!-- .site -->
 
 <?php wp_footer(); ?>
-
-<script src="//use.typekit.net/bzi0amg.js"></script>
-<script>try{Typekit.load();}catch(e){}</script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/script.js"></script>
 
 </body>
 </html>

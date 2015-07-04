@@ -42,11 +42,17 @@
 			<nav role="navigation">
 				<h3 class="question">I'm looking for a gift for </h3>
 				<select class="gift-for">
-					<option value="">everyone</option>
+					<option value="0" data-meta="">everyone</option>
 					<?php
+					$categoryID =  get_query_var('cat');
 					$categories = get_categories();
 					foreach ($categories as $category) {
-						echo '<option value="'.$category->slug.'">'.$category->cat_name.'</option>';
+						if($categoryID == $category->cat_ID) {
+							$selected = 'selected';
+						} else {
+							$selected = '';
+						}
+						echo '<option value="'.$category->cat_ID.'" data-meta="'.$category->slug.'" '.$selected.'>'.$category->cat_name.'</option>';
 					}
 					?>
 				</select>
